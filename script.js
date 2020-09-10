@@ -38,6 +38,9 @@ window.addEventListener("resize", () => {
 
 navSlide();
 
+//***************************** */
+//      Image slider code
+//********************************** */
 
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
@@ -54,11 +57,13 @@ carouselSlide.style.transform = `translateX(${-size * counter}px)`;
 
 //buttonlisteners
 
+
 nextBtn.addEventListener('click', ()=> {
     if(counter >= carouselImages.length -1)return;
     carouselSlide.style.transition = 'transform 0.4s ease-in-out';
     counter++;
     carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+    displaytest();
    
     
 });
@@ -68,6 +73,7 @@ prevBtn.addEventListener('click', ()=> {
     carouselSlide.style.transition = 'transform 0.4s ease-in-out';
     counter--;
     carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+    displaytest();
     
     
 });
@@ -87,3 +93,12 @@ carouselSlide.addEventListener('transitionend',()=>{
     }
 
 });
+
+const displaytest = ()=> {
+    for (i=0; i <= carouselImages.length; i++){
+        if(carouselImages[i] !== counter){
+            carouselImages[i].style.padding = '1%';
+        }
+    }
+    
+}

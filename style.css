@@ -245,9 +245,10 @@ navigation animations
 
 .carousel-slide img{
     width: 100%;
-    max-height: auto;
-    padding: 2%;
-    border-radius: 10px;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    
 }
 
 #prevBtn{
