@@ -246,6 +246,8 @@ navigation animations
 .carousel-slide img{
     width: 100%;
     max-height: auto;
+    padding: 1%;
+    border-radius: 10px;
 }
 
 #prevBtn{
@@ -321,7 +323,7 @@ navigation animations
     .about-box{
         height: auto;
     }
-    
+
     .about-text{
         max-width: 40%;
         max-height: auto;
@@ -422,10 +424,10 @@ navigation animations
         padding-bottom: 3%;
     }
 
-    .Grow{
-        /* margin-top: 15%; */
+    /* .Grow{
+        margin-top: 15%;
         
-    }
+    } */
 
     #prevBtn{
        font-size: 2em;
