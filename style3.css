@@ -1,0 +1,243 @@
+
+/* ********************************
+    whole page /main section changes
+******************************** */
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+main{
+    width:80%; 
+    height: auto;
+    display: flex;
+    background: rgba(26, 43, 54, 0.8); 
+    border-radius: 25px;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-bottom: 5%; 
+    margin-top: 6%; 
+    
+}
+
+/* ***************************************
+            Gallery
+************************************* */
+main h1{
+    color: white;
+    font-size: 10vh;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+.gallery-box{
+    display: flex;
+    flex-flow:row wrap;
+    flex: auto;
+    justify-content: space-around;
+    margin: 4%;
+}
+
+.gallery-box img{
+    max-height: auto;
+    max-width: 30%;
+}
+
+/* ****************************************************
+Navigation bar styles 
+**************************************************** */
+nav{
+    position:fixed;
+    z-index: 4;
+    
+    width:100%; 
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A2B36;
+    min-height: 7vh;
+    font-family: 'Poppins', sans-serif;
+    opacity:0.9;
+    
+}
+
+.logo{
+    color: burlywood;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+/* list tags in ul*/
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width:30%;
+    list-style:none;
+}
+
+.nav-links a{
+    color: burlywood;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    background-color: burlywood;
+    width:30px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease; 
+
+}
+
+
+
+
+/* ***************************
+navigation animations
+*************************** */
+
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+
+/* *****************************
+        footer
+******************************* */
+
+.footer{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 5em;
+    width: 100vw;
+    background-color: #1A2B36;
+    opacity: 0.9;
+    align-items: center;
+
+}
+
+.footer a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: burlywood;
+    font-size: 2rem;
+}
+
+
+
+/* *********************************
+  other media
+********************************** */
+  
+  @media screen and (max-width:1300px){
+    .nav-links{
+        width:50%;
+    }
+    
+    .about-text{
+        max-width: 40%;
+        max-height: auto;
+        margin-top: none;
+         padding-left: 2%;
+     }
+     .about-text h4{
+         font-size: 3vw;
+         
+        
+     }
+     .about-text p{
+         font-size: 1.5vw;
+     }
+
+     .about-image{
+        max-width: 100%;
+        max-height:100%;
+     }
+
+     .latest-work{
+         max-width:60%;
+     }
+}
+
+
+
+  @media screen and (max-width:768px){
+        body{
+            overflow-x: hidden;
+        }
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height:94vh;
+            top:6vh; 
+            background-color: #1A2B36;
+            display:flex;
+            flex-direction: column;
+            align-items: center; 
+            width:50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in-out;
+            
+            
+        }
+    
+        .nav-links li{
+            opacity: 0;
+            
+        }
+
+        .burger{
+            display: block;
+        }
+
+
+    .nav-active{
+        transform: translateX(0%);
+        
+        
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity:0;
+            transform: translateX(-50px);
+        }
+        to{
+            opacity:1;
+            transform: translateX(0px);
+        }
+    }
+
+}
