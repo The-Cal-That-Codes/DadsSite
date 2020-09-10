@@ -116,7 +116,7 @@ nav{
   .about-image{
       flex: auto;
       max-height: 90%;
-      max-width: 100%;
+      max-width: auto;
       margin-left:30px;
       border-radius: 8px;
       
@@ -212,15 +212,15 @@ Nav bar phone size
        flex-direction: column;
        align-items: center; 
        margin-top: 0;
-       padding: 2%;
-       margin-top: 0;
+       padding-bottom: 2%;
     }
     .about-text h1{
-        font-size: 2em;
+        /* font-size: 2em;
         margin-bottom: 2%;
         margin-top: 2%;
         text-decoration: underline;
-        color: burlywood;
+        color: burlywood; */
+        display:none;
         
         
     }
@@ -230,9 +230,11 @@ Nav bar phone size
    
 
     .about-image{
-        display: none;
-      max-height: 90%;
-      max-width: 100%;
+        margin:0;
+      margin-top:5%; 
+       
+      max-height: 50vh;
+      max-width: 40vh;
     }
     
        
