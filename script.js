@@ -63,7 +63,7 @@ nextBtn.addEventListener('click', ()=> {
     carouselSlide.style.transition = 'transform 0.4s ease-in-out';
     counter++;
     carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-    displaytest();
+    // displaytest();
    
     
 });
@@ -73,7 +73,7 @@ prevBtn.addEventListener('click', ()=> {
     carouselSlide.style.transition = 'transform 0.4s ease-in-out';
     counter--;
     carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-    displaytest();
+    // displaytest();
     
     
 });
@@ -94,11 +94,11 @@ carouselSlide.addEventListener('transitionend',()=>{
 
 });
 
-const displaytest = ()=> {
-    for (i=0; i <= carouselImages.length; i++){
-        if(carouselImages[i] !== counter){
-            carouselImages[i].style.padding = '1%';
-        }
-    }
+// const displaytest = ()=> {
+//     for (i=0; i <= carouselImages.length; i++){
+//         if(carouselImages[i] !== counter){
+//             carouselImages[i].style.padding = '1%';
+//         }
+//     }
     
-}
+// }
