@@ -30,17 +30,26 @@ nav{
     opacity:0.9;
     
 }
-
 .logo a{
     text-decoration: none;
-}
-
-.logo h4{
     color: burlywood;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
+    cursor: pointer;
 }
+
+/* .logo a{
+    text-decoration: none;
+    
+} */
+
+/* .logo h4{
+    color: burlywood;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+} */
 
 
 /* list tags in ul*/

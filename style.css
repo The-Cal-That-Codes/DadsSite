@@ -42,15 +42,20 @@ nav{
 
 .logo a{
     text-decoration: none;
-}
-
-.logo h4{
     color: burlywood;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
     cursor: pointer;
 }
+
+/* .logo h4{
+    color: burlywood;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    cursor: pointer;
+} */
 
 
 
