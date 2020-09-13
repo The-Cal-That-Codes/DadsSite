@@ -11,6 +11,7 @@ body{
     align-content: space-between;
     background: url(background.jpg) no-repeat center center fixed;
     background-size: cover;
+    
 }
 
 /* ****************************************************
@@ -108,9 +109,10 @@ nav{
   }
   .about-box {
       display: flex;
+      flex-direction: column;
       align-items: center;
       width:80%; 
-      height: 80vh;
+      height: auto;
       background: linear-gradient( to right,  rgba(26, 43, 54, 0.95),rgba(36, 62, 78, 0.98) ); 
       border-radius: 25px;
       border-left: solid 6px burlywood;
@@ -122,30 +124,25 @@ nav{
   .about-text h1{
       font-family: 'Poppins', sans-serif;
       color: burlywood; 
-      font-size: 2.5em;
+      font-size: 4em;
       font-weight: 800;
+      margin-top: 2%;
+      
+      
   }
 
   .about-text p{
     font-family: 'Noto Serif', serif;
     color: #FFF0DD; 
     opacity: 0.9;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 500;
     text-decoration: italic;
-    padding-right: 5px;
+    justify-self: center;
+    margin-bottom: 2%;
 }
 
 
-  .about-image{
-      flex: auto;
-      max-height: 90%;
-      max-width: auto;
-      margin-left:30px;
-      border-radius: 8px;
-      border: solid 2px #6f4c1e;
-      
-  }
 
   .about-text{
       margin-left:4%;
@@ -156,6 +153,7 @@ nav{
     footer styles
 ******************************** */
   .footer{
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -189,7 +187,10 @@ Nav bar tablet size
     .nav-links{
         width:50%;
     }
-
+    .about-wrap{
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+    }
     .about-box{
         flex: 0 1 auto;
         flex-direction: column;
@@ -210,31 +211,24 @@ Nav bar tablet size
        height: auto;
     }
     .about-text h1{
-        /* font-size: 2em;
+        font-size: 2em;
         margin-bottom: 2%;
         margin-top: 2%;
         text-decoration: underline;
-        color: burlywood; */
-        display:none;
+        color: burlywood;
+        
         
         
     }
     .about-text p{
-        font-size: 3.7vh;
+        font-size: 2rem;
+        margin-bottom: 7%;
         
 
     }
    
 
-    .about-image{
-        margin:0;
-      margin-bottom:0.5%; 
-      margin-top:0.5%; 
-       
-      max-height: 50vh;
-      max-width: 40vh;
-    }
-    
+ 
 
 }
 
@@ -296,28 +290,23 @@ Nav bar phone size
        height: auto;
     }
     .about-text h1{
-        /* font-size: 2em;
+        font-size: 2em;
         margin-bottom: 2%;
         margin-top: 2%;
         text-decoration: underline;
-        color: burlywood; */
-        display:none;
+        color: burlywood;
+        
         
         
     }
     .about-text p{
-        font-size: 2.7vh;
+        font-size: 4vw;
+        margin-bottom: 7%;
 
     }
    
 
-    .about-image{
-        margin:0;
-      margin-top:5%; 
-       
-      max-height: 50vh;
-      max-width: 40vh;
-    }
+
     
        
 
