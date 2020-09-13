@@ -39,7 +39,7 @@ nav{
     opacity:0.9;
     
 }
-
+/* 
 .logo a{
     text-decoration: none;
     color: burlywood;
@@ -47,15 +47,15 @@ nav{
     letter-spacing: 5px;
     font-size: 30px;
     cursor: pointer;
-}
+} */
 
-/* .logo h4{
+.logo h4{
     color: burlywood;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
     cursor: pointer;
-} */
+}
 
 
 

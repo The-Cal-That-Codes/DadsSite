@@ -32,16 +32,16 @@ nav{
     
 }
 
-.logo a{
+/* .logo a{
     text-decoration: none;
     color: burlywood;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
     cursor: pointer;
-}
+} */
 
-/* .logo a{
+.logo a{
     text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
-} */
+}
 
 
 /* list tags in ul*/
