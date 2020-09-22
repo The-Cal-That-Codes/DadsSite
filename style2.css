@@ -136,10 +136,10 @@ nav{
   }
 
   .about-text p{
-    font-family: 'Noto Serif', serif;
+    font-family: 'Poppins', sans-serif;
     color: #FFF0DD; 
     opacity: 0.9;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 500;
     text-decoration: italic;
     padding-right: 5px;
@@ -207,6 +207,7 @@ Nav bar tablet size
         
         
     }
+    
     .about{
         flex-direction: column;
     }

@@ -193,8 +193,8 @@ navigation animations
   .about-image{
       justify-self: flex-start;
       flex: inital;
-      max-height: 100%;
-      min-width: 30%;
+      height: auto;
+      width: auto;
       border: solid 2px #6f4c1e;
   }
   .about-text h4{
@@ -210,9 +210,9 @@ navigation animations
   }
 
   .about-text p{
-      font-size: 2em;
+      font-size: 1.5em;
       justify-self: center;
-      font-weight: 500;
+      font-weight: 300;
       color: #FFF0DD;
       opacity: 0.9;
       margin-left: 3%;
@@ -394,7 +394,49 @@ navigation animations
     }
 }
 
+@media screen and (max-width: 1100px){
+    .about-box{
+        flex-direction: column;
+        margin-top: 15%;
+        
+        border-right: solid 2px burlywood;
+        border-top: solid 2px burlywood;
+        border-left: solid 2px burlywood;
+    }
 
+    .about{
+        flex-direction: column;
+    }
+
+    .about-text{
+        
+       margin-top: 0;
+       padding: 0;
+       max-width: 100%;
+       max-height: 100%;
+       margin-top: 3%;
+    }
+    .about-text h4{
+        font-size: 1.5em;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .about-text p{
+        font-size: 90%;
+    }
+   
+    .latest-work h1{
+        font-size: 2em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .about-image{
+        align-self:center;
+        max-width: 100%;
+        max-height:100%;
+    }
+}
 
   @media screen and (max-width:768px){
     body{
